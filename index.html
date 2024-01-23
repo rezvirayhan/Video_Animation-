@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XR-3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <section>
+        <video src="video/video.mp4" autoplay="" muted="" loop=""></video>
+        <div class="box">
+            <div>
+                <span>
+                    <video src="video/video.mp4" autoplay="" muted="" loop=""></video>
+                </span>
+                <span>
+                    <video src="video/video.mp4" autoplay="" muted="" loop=""></video>
+                </span>
+                <span>
+                    <video src="video/video.mp4" autoplay="" muted="" loop=""></video>
+                </span>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+    <section>
+        <video src="video/video.mp4" autoplay="" muted="" loop=""></video>
+        <div class="box">
+            <div>
+                <span>
+                    <video onclick="rotateVideo(this)" src="video/video.mp4" autoplay="" muted="" loop=""></video>
+                </span>
+                <span>
+                    <video onclick="rotateVideo(this)" src="video/video.mp4" autoplay="" muted="" loop=""></video>
+                </span>
+                <span>
+                    <video onclick="rotateVideo(this)" src="video/video.mp4" autoplay="" muted="" loop=""></video>
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function rotateVideo(video) {
+            video.style.transform = 'rotate(180deg)';
+            video.style.transform = 'rotateX(-20deg) rotateY(180deg) translate3D(-75px, -50px, 150px)';
+
+        }
+    </script>
+</body>
+
+</html>
